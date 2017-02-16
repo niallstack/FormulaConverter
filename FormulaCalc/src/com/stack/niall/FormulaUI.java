@@ -6,6 +6,7 @@
 package com.stack.niall;
 
 import java.awt.Color;
+import static jdk.nashorn.internal.objects.NativeMath.round;
 
 /**
  *
@@ -44,19 +45,28 @@ public class FormulaUI extends javax.swing.JFrame {
         CirAreaPnl = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        acRadiusTxt = new javax.swing.JTextField();
+        caRadiusTxt = new javax.swing.JTextField();
         acBtn = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        acAnswerTxt = new javax.swing.JTextField();
+        caAnswerTxt = new javax.swing.JTextField();
         RecAreaPnl = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        arBaseTxt = new javax.swing.JTextField();
-        arHeightTxt = new javax.swing.JTextField();
+        raLengthTxt = new javax.swing.JTextField();
+        raWidthTxt = new javax.swing.JTextField();
         arAnswerBtn = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        arAnswerTxt = new javax.swing.JTextField();
+        raAnswerTxt = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        paBaseTxt = new javax.swing.JTextField();
+        paHeightTxt = new javax.swing.JTextField();
+        apAnswerBtn = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        paAnswerTxt = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -90,6 +100,11 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         taBtn.setLabel("=");
+        taBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taBtnActionPerformed(evt);
+            }
+        });
 
         taAnswerTxt.setEditable(false);
 
@@ -142,7 +157,7 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addComponent(taBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(taHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(taBtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(taAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -155,11 +170,22 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel6.setText("Radius");
 
+        caRadiusTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caRadiusTxtActionPerformed(evt);
+            }
+        });
+
         acBtn.setText("=");
+        acBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acBtnActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Answer");
 
-        acAnswerTxt.setEditable(false);
+        caAnswerTxt.setEditable(false);
 
         javax.swing.GroupLayout CirAreaPnlLayout = new javax.swing.GroupLayout(CirAreaPnl);
         CirAreaPnl.setLayout(CirAreaPnlLayout);
@@ -173,7 +199,7 @@ public class FormulaUI extends javax.swing.JFrame {
                         .addGap(79, 79, 79))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CirAreaPnlLayout.createSequentialGroup()
                         .addGroup(CirAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(acAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(caAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, CirAreaPnlLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel7)))
@@ -182,7 +208,7 @@ public class FormulaUI extends javax.swing.JFrame {
                 .addGroup(CirAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CirAreaPnlLayout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(acRadiusTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(caRadiusTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(56, 56, 56)
                         .addComponent(acBtn))
                     .addGroup(CirAreaPnlLayout.createSequentialGroup()
@@ -200,11 +226,11 @@ public class FormulaUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(CirAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(acBtn)
-                    .addComponent(acRadiusTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(caRadiusTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(acAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(caAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -213,21 +239,26 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel8.setText("Area of Rectangle");
 
-        jLabel9.setText("Base");
+        jLabel9.setText("Length");
 
-        jLabel10.setText("Height");
+        jLabel10.setText("Width");
 
-        arHeightTxt.addActionListener(new java.awt.event.ActionListener() {
+        raWidthTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                arHeightTxtActionPerformed(evt);
+                raWidthTxtActionPerformed(evt);
             }
         });
 
         arAnswerBtn.setText("=");
+        arAnswerBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                arAnswerBtnActionPerformed(evt);
+            }
+        });
 
         jLabel11.setText("Answer");
 
-        arAnswerTxt.setEditable(false);
+        raAnswerTxt.setEditable(false);
 
         javax.swing.GroupLayout RecAreaPnlLayout = new javax.swing.GroupLayout(RecAreaPnl);
         RecAreaPnl.setLayout(RecAreaPnlLayout);
@@ -242,19 +273,19 @@ public class FormulaUI extends javax.swing.JFrame {
                         .addComponent(jLabel10))
                     .addGroup(RecAreaPnlLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(arBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(raLengthTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
                         .addGroup(RecAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11)
                             .addGroup(RecAreaPnlLayout.createSequentialGroup()
-                                .addComponent(arHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(raWidthTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
                                 .addComponent(arAnswerBtn))))
                     .addGroup(RecAreaPnlLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addGroup(RecAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
-                            .addComponent(arAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(raAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         RecAreaPnlLayout.setVerticalGroup(
@@ -268,13 +299,86 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(RecAreaPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(arBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(arHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(raLengthTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(raWidthTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(arAnswerBtn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(arAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(raAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(8, Short.MAX_VALUE))
+        );
+
+        jPanel1.setBackground(new java.awt.Color(51, 204, 0));
+        jPanel1.setPreferredSize(new java.awt.Dimension(250, 154));
+
+        jLabel12.setText("Area of Parallelogram ");
+
+        jLabel13.setText("Base");
+
+        jLabel14.setText("Height");
+
+        apAnswerBtn.setText("=");
+        apAnswerBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apAnswerBtnActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setText("Answer");
+
+        paAnswerTxt.setEditable(false);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel13)
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel14))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel15)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(paBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(paHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(paAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(apAnswerBtn)
+                .addGap(14, 14, 14))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(paBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(paHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(apAnswerBtn))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(paAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
@@ -289,16 +393,20 @@ public class FormulaUI extends javax.swing.JFrame {
                         .addComponent(CirAreaPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(RecAreaPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 715, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(TriAreaPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(TriAreaPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CirAreaPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RecAreaPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(251, 251, 251))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -308,9 +416,61 @@ public class FormulaUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_taHeightTxtActionPerformed
 
-    private void arHeightTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arHeightTxtActionPerformed
+    private void raWidthTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_raWidthTxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_arHeightTxtActionPerformed
+    }//GEN-LAST:event_raWidthTxtActionPerformed
+
+    private void taBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taBtnActionPerformed
+        String heightAsString = taHeightTxt.getText();
+        String baseAsString = taBaseTxt.getText();
+        
+        double height = Double.parseDouble(heightAsString);
+        double base = Double.parseDouble(baseAsString);     
+        double answer = Areas.Triangle(base, height);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        taAnswerTxt.setText(Double.toString(roundOff));
+        
+    }//GEN-LAST:event_taBtnActionPerformed
+
+    private void acBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acBtnActionPerformed
+        String radiusAsString = caRadiusTxt.getText();
+        
+        double radius = Double.parseDouble(radiusAsString);
+        double answer = Areas.Circle(radius);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        caAnswerTxt.setText(Double.toString(roundOff));
+        
+    }//GEN-LAST:event_acBtnActionPerformed
+
+    private void caRadiusTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caRadiusTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caRadiusTxtActionPerformed
+
+    private void arAnswerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arAnswerBtnActionPerformed
+        String widthAsString = raWidthTxt.getText();
+        String lengthAsString = raLengthTxt.getText();
+        
+        double width = Double.parseDouble(widthAsString);
+        double length = Double.parseDouble(lengthAsString);     
+        double answer = Areas.Rectangle(length, width);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        raAnswerTxt.setText(Double.toString(roundOff));
+    }//GEN-LAST:event_arAnswerBtnActionPerformed
+
+    private void apAnswerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apAnswerBtnActionPerformed
+        String heightAsString = paHeightTxt.getText();
+        String baseAsString = paBaseTxt.getText();
+        
+        double height = Double.parseDouble(heightAsString);
+        double base = Double.parseDouble(baseAsString);     
+        double answer = Areas.Parallelogram(base, height);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        paAnswerTxt.setText(Double.toString(roundOff));
+    }//GEN-LAST:event_apAnswerBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -351,17 +511,19 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JPanel CirAreaPnl;
     private javax.swing.JPanel RecAreaPnl;
     private javax.swing.JPanel TriAreaPnl;
-    private javax.swing.JTextField acAnswerTxt;
     private javax.swing.JButton acBtn;
-    private javax.swing.JTextField acRadiusTxt;
+    private javax.swing.JButton apAnswerBtn;
     private javax.swing.JButton arAnswerBtn;
-    private javax.swing.JTextField arAnswerTxt;
-    private javax.swing.JTextField arBaseTxt;
-    private javax.swing.JTextField arHeightTxt;
+    private javax.swing.JTextField caAnswerTxt;
+    private javax.swing.JTextField caRadiusTxt;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -370,8 +532,14 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField paAnswerTxt;
+    private javax.swing.JTextField paBaseTxt;
+    private javax.swing.JTextField paHeightTxt;
+    private javax.swing.JTextField raAnswerTxt;
+    private javax.swing.JTextField raLengthTxt;
+    private javax.swing.JTextField raWidthTxt;
     private javax.swing.JTextField taAnswerTxt;
     private javax.swing.JTextField taBaseTxt;
     private javax.swing.JButton taBtn;

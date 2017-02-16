@@ -10,16 +10,24 @@ package com.stack.niall;
  * @author t00174406
  */
 public class Areas {
-    public double Triangle()
+    public static double Triangle(double base, double height)
     {
-        return 333.33;
+        double answer = (base * height) / 2;
+        return answer;
     }
-    public double Circle()
+    public static double Circle(double radius)
     {
-        return 43434.3434;
+        double answer = Math.PI * (radius * radius);
+        return answer;
     }
-    public double Rectangle()
+    public static double Rectangle(double length, double width)
     {
-        return 3434.343;
+        double answer = length * width;
+        return answer;
+    }
+    public static double Parallelogram(double base, double height)
+    {
+        double answer = base * height;
+        return answer;
     }
 }
