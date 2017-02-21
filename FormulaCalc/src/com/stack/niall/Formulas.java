@@ -55,15 +55,15 @@ public class Formulas {
         double answer = (Math.PI * radiusSquared * height) / 3;
         return answer;
     }
-    public static double VolPrism(double length, double base, double height)
+    public static double VolPrism(double length, double width, double depth)
     {
-        double answer = length * base * height;
+        double answer = length * width * depth;
         return answer;
     }
-    public static void VolSphere(double radius)
+    public static double VolSphere(double radius)
     {
         double radiusCubed = Math.pow(radius, 3);
         double answer = (4 * Math.PI * radiusCubed) / 3;
+        return answer;
     }
-    
 }

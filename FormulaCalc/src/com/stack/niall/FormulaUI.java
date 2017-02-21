@@ -73,30 +73,30 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
-        velDistanceTxt = new javax.swing.JTextField();
+        speedDistanceTxt = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        velTimeTxt = new javax.swing.JTextField();
-        velBtn = new javax.swing.JButton();
-        velAnswerTxt = new javax.swing.JTextField();
+        speedTimeTxt = new javax.swing.JTextField();
+        speedBtn = new javax.swing.JButton();
+        speedAnswerTxt = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        speedVelocityTxt = new javax.swing.JTextField();
-        speedTimeTxt = new javax.swing.JTextField();
+        distanceSpeedTxt = new javax.swing.JTextField();
+        distanceTimeTxt = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
-        speedBtn = new javax.swing.JButton();
+        distanceBtn = new javax.swing.JButton();
         distanceAnswerTxt = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        timeVelocityTxt = new javax.swing.JTextField();
+        timeSpeedTxt = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
-        timeSpeedTxt1 = new javax.swing.JTextField();
+        timeDistanceTxt = new javax.swing.JTextField();
         timeBtn = new javax.swing.JButton();
-        TimeAnswerTxt = new javax.swing.JTextField();
+        timeAnswerTxt = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
@@ -129,15 +129,11 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        mortRateTxt = new javax.swing.JTextField();
-        mortPrincTxt = new javax.swing.JTextField();
-        jLabel41 = new javax.swing.JLabel();
-        mortYearsTxt = new javax.swing.JTextField();
-        mortBtn = new javax.swing.JButton();
-        mortAnswerTxt = new javax.swing.JTextField();
-        jLabel40 = new javax.swing.JLabel();
+        icInchTxt = new javax.swing.JTextField();
+        jLabel73 = new javax.swing.JLabel();
+        icBtn = new javax.swing.JButton();
+        icCmTxt = new javax.swing.JTextField();
+        jLabel74 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
@@ -199,7 +195,7 @@ public class FormulaUI extends javax.swing.JFrame {
         RandNumBtn = new javax.swing.JButton();
         RandNumTxt = new javax.swing.JTextField();
         jPanel21 = new javax.swing.JPanel();
-        resetBtn = new javax.swing.JButton();
+        exitBtn = new javax.swing.JButton();
         jPanel22 = new javax.swing.JPanel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -255,6 +251,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         taAnswerTxt.setEditable(false);
+        taAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        taAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -346,6 +344,8 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel7.setText("Answer");
 
         caAnswerTxt.setEditable(false);
+        caAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        caAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout CirAreaPnlLayout = new javax.swing.GroupLayout(CirAreaPnl);
         CirAreaPnl.setLayout(CirAreaPnlLayout);
@@ -429,6 +429,8 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel11.setText("Answer");
 
         raAnswerTxt.setEditable(false);
+        raAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        raAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout RecAreaPnlLayout = new javax.swing.GroupLayout(RecAreaPnl);
         RecAreaPnl.setLayout(RecAreaPnlLayout);
@@ -516,38 +518,36 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel15.setText("Answer");
 
         paAnswerTxt.setEditable(false);
+        paAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        paAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel13))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(paHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel14)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 11, Short.MAX_VALUE)
-                        .addComponent(jLabel12))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(paBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(apAnswerBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(paAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(26, 26, 26))
+                            .addComponent(jLabel13)
+                            .addComponent(paHeightTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 11, Short.MAX_VALUE)
+                                .addComponent(jLabel12))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(paBaseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(apAnswerBtn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(paAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(26, 26, 26))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -602,6 +602,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         emcAnswerTxt.setEditable(false);
+        emcAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        emcAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
@@ -612,19 +614,13 @@ public class FormulaUI extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel16))
+                    .addComponent(jLabel16)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(emcMassTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(emcMassTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18))
                         .addGap(37, 37, 37)
                         .addComponent(emcBtn)))
                 .addGap(38, 38, 38)
@@ -662,22 +658,24 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Time (s)");
 
-        velTimeTxt.addActionListener(new java.awt.event.ActionListener() {
+        speedTimeTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                velTimeTxtActionPerformed(evt);
+                speedTimeTxtActionPerformed(evt);
             }
         });
 
-        velBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        velBtn.setForeground(new java.awt.Color(255, 255, 255));
-        velBtn.setLabel("=");
-        velBtn.addActionListener(new java.awt.event.ActionListener() {
+        speedBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        speedBtn.setForeground(new java.awt.Color(255, 255, 255));
+        speedBtn.setLabel("=");
+        speedBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                velBtnActionPerformed(evt);
+                speedBtnActionPerformed(evt);
             }
         });
 
-        velAnswerTxt.setEditable(false);
+        speedAnswerTxt.setEditable(false);
+        speedAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        speedAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
@@ -685,14 +683,14 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Velocity (m/s)");
+        jLabel23.setText("Speed (m/s)");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
+                .addContainerGap(90, Short.MAX_VALUE)
                 .addComponent(jLabel23)
                 .addGap(68, 68, 68))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -701,17 +699,17 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel4Layout.createSequentialGroup()
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(velTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(velDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(speedTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(speedDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel20))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(jPanel4Layout.createSequentialGroup()
                             .addComponent(jLabel21)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                            .addComponent(velBtn)
+                            .addComponent(speedBtn)
                             .addGap(30, 30, 30)))
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(velAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(speedAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel22))
                     .addContainerGap()))
         );
@@ -728,7 +726,7 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(velDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(speedDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel21))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
@@ -736,10 +734,10 @@ public class FormulaUI extends javax.swing.JFrame {
                             .addComponent(jLabel22)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(velAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(velBtn))))
+                                .addComponent(speedAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(speedBtn))))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(velTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(speedTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(23, 23, 23)))
         );
 
@@ -752,11 +750,11 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("Veocity (m/s)");
+        jLabel25.setText("Speed (m/s)");
 
-        speedTimeTxt.addActionListener(new java.awt.event.ActionListener() {
+        distanceTimeTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                speedTimeTxtActionPerformed(evt);
+                distanceTimeTxtActionPerformed(evt);
             }
         });
 
@@ -764,16 +762,18 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("Time (s)");
 
-        speedBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        speedBtn.setForeground(new java.awt.Color(255, 255, 255));
-        speedBtn.setLabel("=");
-        speedBtn.addActionListener(new java.awt.event.ActionListener() {
+        distanceBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        distanceBtn.setForeground(new java.awt.Color(255, 255, 255));
+        distanceBtn.setLabel("=");
+        distanceBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                speedBtnActionPerformed(evt);
+                distanceBtnActionPerformed(evt);
             }
         });
 
         distanceAnswerTxt.setEditable(false);
+        distanceAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        distanceAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
@@ -793,14 +793,14 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel5Layout.createSequentialGroup()
                             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(speedTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(speedVelocityTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(distanceTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(distanceSpeedTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel25))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(jPanel5Layout.createSequentialGroup()
                             .addComponent(jLabel26)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                            .addComponent(speedBtn)
+                            .addComponent(distanceBtn)
                             .addGap(30, 30, 30)))
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(distanceAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -820,7 +820,7 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addComponent(speedVelocityTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(distanceSpeedTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel26))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
@@ -829,9 +829,9 @@ public class FormulaUI extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(distanceAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(speedBtn))))
+                                .addComponent(distanceBtn))))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(speedTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(distanceTimeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(23, 23, 23)))
         );
 
@@ -844,15 +844,15 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setText("Veocity (m/s)");
+        jLabel29.setText("Speed (m/s)");
 
         jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Distance (m/s)");
 
-        timeSpeedTxt1.addActionListener(new java.awt.event.ActionListener() {
+        timeDistanceTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                timeSpeedTxt1ActionPerformed(evt);
+                timeDistanceTxtActionPerformed(evt);
             }
         });
 
@@ -865,7 +865,9 @@ public class FormulaUI extends javax.swing.JFrame {
             }
         });
 
-        TimeAnswerTxt.setEditable(false);
+        timeAnswerTxt.setEditable(false);
+        timeAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        timeAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
@@ -885,8 +887,8 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(timeSpeedTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(timeVelocityTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(timeDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(timeSpeedTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel29))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
@@ -895,7 +897,7 @@ public class FormulaUI extends javax.swing.JFrame {
                             .addComponent(timeBtn)
                             .addGap(30, 30, 30)))
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(TimeAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(timeAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel31))
                     .addContainerGap()))
         );
@@ -912,7 +914,7 @@ public class FormulaUI extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(timeVelocityTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(timeSpeedTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel30))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
@@ -920,10 +922,10 @@ public class FormulaUI extends javax.swing.JFrame {
                             .addComponent(jLabel31)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(TimeAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(timeAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(timeBtn))))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(timeSpeedTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(timeDistanceTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(29, 29, 29)))
         );
 
@@ -958,6 +960,10 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setText("Answer");
+
+        cvAnswerTxt.setEditable(false);
+        cvAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        cvAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -1049,6 +1055,10 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel45.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("Answer");
+
+        pvAnswerTxt.setEditable(false);
+        pvAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        pvAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1143,6 +1153,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         svAnswerTxt.setEditable(false);
+        svAnswerTxt.setBackground(new java.awt.Color(153, 153, 153));
+        svAnswerTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel48.setBackground(new java.awt.Color(255, 255, 255));
         jLabel48.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1200,100 +1212,81 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel37.setText("Mortgage (Per Month)");
+        jLabel37.setText("Inches to Centimetres");
 
-        jLabel38.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel38.setText("Principle");
-
-        jLabel39.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel39.setText("Rate");
-
-        jLabel41.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel41.setText("Years");
-
-        mortBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        mortBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mortBtn.setLabel("=");
-        mortBtn.addActionListener(new java.awt.event.ActionListener() {
+        icInchTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mortBtnActionPerformed(evt);
+                icInchTxtActionPerformed(evt);
             }
         });
 
-        mortAnswerTxt.setEditable(false);
+        jLabel73.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel73.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText("in");
 
-        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel40.setText("Answer");
+        icBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        icBtn.setForeground(new java.awt.Color(255, 255, 255));
+        icBtn.setText("=");
+        icBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                icBtnActionPerformed(evt);
+            }
+        });
+
+        icCmTxt.setEditable(false);
+        icCmTxt.setBackground(new java.awt.Color(153, 153, 153));
+        icCmTxt.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLabel74.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel74.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText("cm");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(mortPrincTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel38))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(mortRateTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel39)))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(mortYearsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel41))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel37)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addComponent(jLabel37)
+                .addContainerGap(42, Short.MAX_VALUE))
             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel10Layout.createSequentialGroup()
-                    .addGap(97, 97, 97)
-                    .addComponent(mortBtn)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(10, 10, 10)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(mortAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel40))
-                    .addGap(20, 20, 20)))
+                        .addGroup(jPanel10Layout.createSequentialGroup()
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(icInchTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel73))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addComponent(icBtn)
+                            .addGap(30, 30, 30)
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel74)
+                                .addComponent(icCmTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGap(10, 10, 10)))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel37)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel39)
-                    .addComponent(jLabel38))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(mortRateTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mortPrincTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel41)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mortYearsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel10Layout.createSequentialGroup()
+                    .addGap(57, 57, 57)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addGap(57, 57, 57)
-                            .addComponent(jLabel40)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(mortAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addGap(100, 100, 100)
-                            .addComponent(mortBtn)))
-                    .addContainerGap(34, Short.MAX_VALUE)))
+                        .addComponent(jLabel73)
+                        .addComponent(jLabel74, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(icBtn)
+                        .addComponent(icInchTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(icCmTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addContainerGap(57, Short.MAX_VALUE)))
         );
 
         jPanel11.setBackground(new java.awt.Color(0, 153, 204));
@@ -1329,6 +1322,8 @@ public class FormulaUI extends javax.swing.JFrame {
         jLabel51.setText("Hex");
 
         dhHexTxt.setEditable(false);
+        dhHexTxt.setBackground(new java.awt.Color(153, 153, 153));
+        dhHexTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1398,6 +1393,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         hdDecTxt.setEditable(false);
+        hdDecTxt.setBackground(new java.awt.Color(153, 153, 153));
+        hdDecTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel54.setBackground(new java.awt.Color(255, 255, 255));
         jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1484,6 +1481,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         fcCTxt.setEditable(false);
+        fcCTxt.setBackground(new java.awt.Color(153, 153, 153));
+        fcCTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel57.setBackground(new java.awt.Color(255, 255, 255));
         jLabel57.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1564,6 +1563,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         cfFTxt.setEditable(false);
+        cfFTxt.setBackground(new java.awt.Color(153, 153, 153));
+        cfFTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel60.setBackground(new java.awt.Color(255, 255, 255));
         jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1648,6 +1649,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         edDollarTxt.setEditable(false);
+        edDollarTxt.setBackground(new java.awt.Color(153, 153, 153));
+        edDollarTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel63.setBackground(new java.awt.Color(255, 255, 255));
         jLabel63.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1728,6 +1731,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         deEuroTxt.setEditable(false);
+        deEuroTxt.setBackground(new java.awt.Color(153, 153, 153));
+        deEuroTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel66.setBackground(new java.awt.Color(255, 255, 255));
         jLabel66.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1808,6 +1813,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         epPoundTxt.setEditable(false);
+        epPoundTxt.setBackground(new java.awt.Color(153, 153, 153));
+        epPoundTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel70.setBackground(new java.awt.Color(255, 255, 255));
         jLabel70.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1888,6 +1895,8 @@ public class FormulaUI extends javax.swing.JFrame {
         });
 
         peEuroTxt.setEditable(false);
+        peEuroTxt.setBackground(new java.awt.Color(153, 153, 153));
+        peEuroTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel72.setBackground(new java.awt.Color(255, 255, 255));
         jLabel72.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -1955,12 +1964,19 @@ public class FormulaUI extends javax.swing.JFrame {
 
         jPanel20.setBackground(new java.awt.Color(255, 255, 255));
 
+        RandNumBtn.setBackground(new java.awt.Color(51, 51, 51));
+        RandNumBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        RandNumBtn.setForeground(new java.awt.Color(255, 255, 255));
         RandNumBtn.setText("Random Number (1-1000)");
         RandNumBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RandNumBtnActionPerformed(evt);
             }
         });
+
+        RandNumTxt.setEditable(false);
+        RandNumTxt.setBackground(new java.awt.Color(153, 153, 153));
+        RandNumTxt.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -1980,31 +1996,36 @@ public class FormulaUI extends javax.swing.JFrame {
                 .addComponent(RandNumBtn)
                 .addGap(18, 18, 18)
                 .addComponent(RandNumTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jPanel21.setBackground(new java.awt.Color(255, 255, 255));
 
-        resetBtn.setBackground(new java.awt.Color(255, 0, 0));
-        resetBtn.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
-        resetBtn.setForeground(new java.awt.Color(255, 255, 255));
-        resetBtn.setText("Reset All");
+        exitBtn.setBackground(new java.awt.Color(255, 0, 0));
+        exitBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 16)); // NOI18N
+        exitBtn.setForeground(new java.awt.Color(255, 255, 255));
+        exitBtn.setText("Exit");
+        exitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(resetBtn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(exitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(resetBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48))
+                .addComponent(exitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
 
         jPanel22.setBackground(new java.awt.Color(255, 255, 255));
@@ -2191,43 +2212,89 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_emcMassTxtActionPerformed
 
     private void emcBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emcBtnActionPerformed
-        // TODO add your handling code here:
+        String massAsString = emcMassTxt.getText();
+        
+        double mass = Double.parseDouble(massAsString);
+        double answer = Formulas.EMC(mass);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        emcAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_emcBtnActionPerformed
-
-    private void velTimeTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_velTimeTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_velTimeTxtActionPerformed
-
-    private void velBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_velBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_velBtnActionPerformed
 
     private void speedTimeTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speedTimeTxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_speedTimeTxtActionPerformed
 
     private void speedBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speedBtnActionPerformed
-        // TODO add your handling code here:
+        String distanceAsString = speedTimeTxt.getText();
+        String timeAsString = speedDistanceTxt.getText();
+        
+        double distance = Double.parseDouble(distanceAsString);
+        double time = Double.parseDouble(timeAsString);
+        double answer = Formulas.Speed(distance, time);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        speedAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_speedBtnActionPerformed
 
-    private void timeSpeedTxt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeSpeedTxt1ActionPerformed
+    private void distanceTimeTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_distanceTimeTxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_timeSpeedTxt1ActionPerformed
+    }//GEN-LAST:event_distanceTimeTxtActionPerformed
+
+    private void distanceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_distanceBtnActionPerformed
+        String speedAsString = distanceSpeedTxt.getText();
+        String timeAsString = distanceTimeTxt.getText();
+        
+        double speed = Double.parseDouble(speedAsString);
+        double time = Double.parseDouble(timeAsString);
+        double answer = Formulas.Distance(speed, time);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        distanceAnswerTxt.setText(Double.toString(roundOff));
+    }//GEN-LAST:event_distanceBtnActionPerformed
+
+    private void timeDistanceTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeDistanceTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_timeDistanceTxtActionPerformed
 
     private void timeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeBtnActionPerformed
-        // TODO add your handling code here:
+        String speedAsString = timeSpeedTxt.getText();
+        String distanceAsString = timeDistanceTxt.getText();
+        
+        double speed = Double.parseDouble(speedAsString);
+        double distance = Double.parseDouble(distanceAsString);
+        double answer = Formulas.Time(speed, distance);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        timeAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_timeBtnActionPerformed
 
-    private void mortBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mortBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mortBtnActionPerformed
-
     private void cvBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cvBtnActionPerformed
-        // TODO add your handling code here:
+        String baseAsString = cvBaseTxt.getText();
+        String heightAsString = cvHeightTxt.getText();
+        String radiusAsString = cvRadiusTxt.getText();
+        
+        double base = Double.parseDouble(baseAsString);
+        double height = Double.parseDouble(heightAsString);
+        double radius = Double.parseDouble(radiusAsString);
+        double answer = Formulas.VolCone(base, height, radius);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        cvAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_cvBtnActionPerformed
 
     private void pvBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pvBtnActionPerformed
-        // TODO add your handling code here:
+        String lengthAsString = pvLengthTxt.getText();
+        String widthAsString = pvWidthTxt.getText();
+        String depthAsString = pvDepthTxt.getText();
+        
+        double length = Double.parseDouble(lengthAsString);
+        double width = Double.parseDouble(widthAsString);
+        double depth = Double.parseDouble(depthAsString);
+        double answer = Formulas.VolPrism(length, width, depth);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        pvAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_pvBtnActionPerformed
 
     private void svRadiusTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svRadiusTxtActionPerformed
@@ -2235,7 +2302,13 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_svRadiusTxtActionPerformed
 
     private void svBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svBtnActionPerformed
-        // TODO add your handling code here:
+        String radiusAsString = svRadiusTxt.getText();
+        
+        double radius = Double.parseDouble(radiusAsString);
+        double answer = Formulas.VolSphere(radius);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        svAnswerTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_svBtnActionPerformed
 
     private void dhDecTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dhDecTxtActionPerformed
@@ -2243,11 +2316,18 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_dhDecTxtActionPerformed
 
     private void dhBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dhBtnActionPerformed
-        // TODO add your handling code here:
+        String decimalAsString = dhDecTxt.getText();
+        
+        int decimal = Integer.parseInt(decimalAsString);
+        String hex = Conversions.decimalToHex(decimal);
+        dhHexTxt.setText(hex);
+        
     }//GEN-LAST:event_dhBtnActionPerformed
 
     private void hdBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hdBtnActionPerformed
-        // TODO add your handling code here:
+       String hex = dhHexTxt.getText();
+       int decimal = Conversions.hexToDecimal(hex);
+       hdDecTxt.setText(Integer.toString(decimal));
     }//GEN-LAST:event_hdBtnActionPerformed
 
     private void hdHexTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hdHexTxtActionPerformed
@@ -2269,7 +2349,13 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_fcFTxtActionPerformed
 
     private void fcBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fcBtnActionPerformed
-        // TODO add your handling code here:
+        String fTempAsString = fcFTxt.getText();
+        
+        double fTemp = Double.parseDouble(fTempAsString);
+        double answer = Conversions.FahrenheitToCelius(fTemp);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        fcCTxt.setText(Double.toString(roundOff));     
     }//GEN-LAST:event_fcBtnActionPerformed
 
     private void cfCTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cfCTxtActionPerformed
@@ -2277,15 +2363,27 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_cfCTxtActionPerformed
 
     private void cfBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cfBtnActionPerformed
-        // TODO add your handling code here:
+        String cTempAsString = cfCTxt.getText();
+        
+        double cTemp = Double.parseDouble(cTempAsString);
+        double answer = Conversions.CelciusToFahrenheit(cTemp);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        cfFTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_cfBtnActionPerformed
 
     private void edEuroTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edEuroTxtActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_edEuroTxtActionPerformed
 
     private void edBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edBtnActionPerformed
-        // TODO add your handling code here:
+        String euroAsString = edEuroTxt.getText();
+        
+        float euro = Float.parseFloat(euroAsString);
+        float answer = Conversions.EuroToDollar(euro);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        edDollarTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_edBtnActionPerformed
 
     private void deDollarTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deDollarTxtActionPerformed
@@ -2293,7 +2391,13 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_deDollarTxtActionPerformed
 
     private void deBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deBtnActionPerformed
-        // TODO add your handling code here:
+        String dollarAsString = deDollarTxt.getText();
+        
+        float dollar = Float.parseFloat(dollarAsString);
+        float answer = Conversions.DollarToEuro(dollar);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        deEuroTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_deBtnActionPerformed
 
     private void epEuroTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epEuroTxtActionPerformed
@@ -2301,7 +2405,13 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_epEuroTxtActionPerformed
 
     private void epBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epBtnActionPerformed
-        // TODO add your handling code here:
+        String euroAsString = epEuroTxt.getText();
+        
+        float euro = Float.parseFloat(euroAsString);
+        float answer = Conversions.EuroToGBP(euro);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        epPoundTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_epBtnActionPerformed
 
     private void pePoundTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pePoundTxtActionPerformed
@@ -2309,8 +2419,32 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_pePoundTxtActionPerformed
 
     private void peBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_peBtnActionPerformed
-        // TODO add your handling code here:
+        String poundAsString = pePoundTxt.getText();
+        
+        float pound = Float.parseFloat(poundAsString);
+        float answer = Conversions.GBPToEuro(pound);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        peEuroTxt.setText(Double.toString(roundOff));
     }//GEN-LAST:event_peBtnActionPerformed
+
+    private void icInchTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icInchTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icInchTxtActionPerformed
+
+    private void icBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icBtnActionPerformed
+        String inchAsString = icInchTxt.getText();
+        
+        double inch = Double.parseDouble(inchAsString);
+        double answer = Conversions.InToCm(inch);
+        double roundOff = (double) Math.round(answer * 100) / 100;
+        
+        icCmTxt.setText(Double.toString(roundOff)); 
+    }//GEN-LAST:event_icBtnActionPerformed
+
+    private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
+        
+    }//GEN-LAST:event_exitBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2352,7 +2486,6 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JButton RandNumBtn;
     private javax.swing.JTextField RandNumTxt;
     private javax.swing.JPanel RecAreaPnl;
-    private javax.swing.JTextField TimeAnswerTxt;
     private javax.swing.JPanel TriAreaPnl;
     private javax.swing.JButton acBtn;
     private javax.swing.JButton apAnswerBtn;
@@ -2374,6 +2507,9 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JTextField dhDecTxt;
     private javax.swing.JTextField dhHexTxt;
     private javax.swing.JTextField distanceAnswerTxt;
+    private javax.swing.JButton distanceBtn;
+    private javax.swing.JTextField distanceSpeedTxt;
+    private javax.swing.JTextField distanceTimeTxt;
     private javax.swing.JButton edBtn;
     private javax.swing.JTextField edDollarTxt;
     private javax.swing.JTextField edEuroTxt;
@@ -2383,12 +2519,16 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JButton epBtn;
     private javax.swing.JTextField epEuroTxt;
     private javax.swing.JTextField epPoundTxt;
+    private javax.swing.JButton exitBtn;
     private javax.swing.JButton fcBtn;
     private javax.swing.JTextField fcCTxt;
     private javax.swing.JTextField fcFTxt;
     private javax.swing.JButton hdBtn;
     private javax.swing.JTextField hdDecTxt;
     private javax.swing.JTextField hdHexTxt;
+    private javax.swing.JButton icBtn;
+    private javax.swing.JTextField icCmTxt;
+    private javax.swing.JTextField icInchTxt;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -2421,11 +2561,7 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
@@ -2460,6 +2596,8 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -2484,11 +2622,6 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField mortAnswerTxt;
-    private javax.swing.JButton mortBtn;
-    private javax.swing.JTextField mortPrincTxt;
-    private javax.swing.JTextField mortRateTxt;
-    private javax.swing.JTextField mortYearsTxt;
     private javax.swing.JTextField paAnswerTxt;
     private javax.swing.JTextField paBaseTxt;
     private javax.swing.JTextField paHeightTxt;
@@ -2503,10 +2636,10 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JTextField raAnswerTxt;
     private javax.swing.JTextField raLengthTxt;
     private javax.swing.JTextField raWidthTxt;
-    private javax.swing.JButton resetBtn;
+    private javax.swing.JTextField speedAnswerTxt;
     private javax.swing.JButton speedBtn;
+    private javax.swing.JTextField speedDistanceTxt;
     private javax.swing.JTextField speedTimeTxt;
-    private javax.swing.JTextField speedVelocityTxt;
     private javax.swing.JTextField svAnswerTxt;
     private javax.swing.JButton svBtn;
     private javax.swing.JTextField svRadiusTxt;
@@ -2514,12 +2647,9 @@ public class FormulaUI extends javax.swing.JFrame {
     private javax.swing.JTextField taBaseTxt;
     private javax.swing.JButton taBtn;
     private javax.swing.JTextField taHeightTxt;
+    private javax.swing.JTextField timeAnswerTxt;
     private javax.swing.JButton timeBtn;
-    private javax.swing.JTextField timeSpeedTxt1;
-    private javax.swing.JTextField timeVelocityTxt;
-    private javax.swing.JTextField velAnswerTxt;
-    private javax.swing.JButton velBtn;
-    private javax.swing.JTextField velDistanceTxt;
-    private javax.swing.JTextField velTimeTxt;
+    private javax.swing.JTextField timeDistanceTxt;
+    private javax.swing.JTextField timeSpeedTxt;
     // End of variables declaration//GEN-END:variables
 }

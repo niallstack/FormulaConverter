@@ -3,8 +3,14 @@ package com.stack.niall;
 /**
  *
  * @author niall
+ * Conversions which are used in the FormulasUI class
  */
-public class Conversions { 
+public class Conversions {
+    public static double InToCm(double inch)
+    {
+        double answer = inch * 2.54;
+        return answer;
+    }
     //decimal to hex code from http://introcs.cs.princeton.edu/java/31datatype/Hex2Decimal.java.html
     public static String decimalToHex(int d) 
     {
@@ -31,12 +37,12 @@ public class Conversions {
         }
         return val;
     }
-    public static double FahrenheitToCelius(int fTemp)
+    public static double FahrenheitToCelius(double fTemp)
     {
         double answer = ((fTemp-32) * 0.5556);
         return answer;
     }
-    public static double CelciusToFahrenheight(int cTemp)
+    public static double CelciusToFahrenheit(double cTemp)
     {
         double answer = ((cTemp*1.8)+32);
         return answer;
