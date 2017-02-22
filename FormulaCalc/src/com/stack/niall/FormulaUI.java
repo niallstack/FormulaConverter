@@ -1000,13 +1000,12 @@ public class FormulaUI extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cvRadiusTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cvAnswerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cvBtn))
-                        .addContainerGap(45, Short.MAX_VALUE))
+                        .addContainerGap(51, Short.MAX_VALUE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel33)
@@ -2365,10 +2364,12 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_edEuroTxtActionPerformed
 
     private void edBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edBtnActionPerformed
+        ExchangeRate exchange = new ExchangeRate();
         String euroAsString = edEuroTxt.getText();
         
         float euro = Float.parseFloat(euroAsString);
-        float answer = Conversions.EuroToDollar(euro);
+        double rateUsd = exchange.getEuroUsdRate();
+        float answer = Conversions.EuroToDollar(euro,rateUsd);
         double roundOff = (double) Math.round(answer * 100) / 100;
         
         edDollarTxt.setText(Double.toString(roundOff));
@@ -2379,10 +2380,12 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_deDollarTxtActionPerformed
 
     private void deBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deBtnActionPerformed
+        ExchangeRate exchange = new ExchangeRate();
         String dollarAsString = deDollarTxt.getText();
         
         float dollar = Float.parseFloat(dollarAsString);
-        float answer = Conversions.DollarToEuro(dollar);
+        double rateEuro = exchange.getUsdEuroRate();
+        float answer = Conversions.DollarToEuro(dollar,rateEuro);
         double roundOff = (double) Math.round(answer * 100) / 100;
         
         deEuroTxt.setText(Double.toString(roundOff));
@@ -2393,10 +2396,12 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_epEuroTxtActionPerformed
 
     private void epBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epBtnActionPerformed
+        ExchangeRate exchange = new ExchangeRate();
         String euroAsString = epEuroTxt.getText();
         
         float euro = Float.parseFloat(euroAsString);
-        float answer = Conversions.EuroToGBP(euro);
+        double rateEuro = exchange.getEuroGBPRate();
+        float answer = Conversions.EuroToGBP(euro, rateEuro);
         double roundOff = (double) Math.round(answer * 100) / 100;
         
         epPoundTxt.setText(Double.toString(roundOff));
@@ -2407,10 +2412,12 @@ public class FormulaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_pePoundTxtActionPerformed
 
     private void peBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_peBtnActionPerformed
+        ExchangeRate exchange = new ExchangeRate();
         String poundAsString = pePoundTxt.getText();
         
         float pound = Float.parseFloat(poundAsString);
-        float answer = Conversions.GBPToEuro(pound);
+        double ratePound = exchange.getGBPEuroRate();
+        float answer = Conversions.GBPToEuro(pound, ratePound);
         double roundOff = (double) Math.round(answer * 100) / 100;
         
         peEuroTxt.setText(Double.toString(roundOff));

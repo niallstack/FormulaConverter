@@ -103,12 +103,11 @@ public class ConversionsTest {
     @Test
     public void testEuroToDollar() {
         System.out.println("EuroToDollar");
-        float euro = 0.0F;
-        float expResult = 0.0F;
-        float result = Conversions.EuroToDollar(euro);
+        float euro = 3.0F;
+        double rateUsd = 1.0;
+        float expResult = 3.0F;
+        float result = Conversions.EuroToDollar(euro, rateUsd);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -117,12 +116,11 @@ public class ConversionsTest {
     @Test
     public void testDollarToEuro() {
         System.out.println("DollarToEuro");
-        float dollar = 0.0F;
-        float expResult = 0.0F;
-        float result = Conversions.DollarToEuro(dollar);
+        float dollar = 3.0F;
+        double rateEuro = 1.0;
+        float expResult = 3.0F;
+        float result = Conversions.DollarToEuro(dollar,rateEuro);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -131,12 +129,11 @@ public class ConversionsTest {
     @Test
     public void testEuroToGBP() {
         System.out.println("EuroToGBP");
-        float euro = 0.0F;
-        float expResult = 0.0F;
-        float result = Conversions.EuroToGBP(euro);
+        float euro = 5.0F;
+        double rateEuro = 2.0;
+        float expResult = 10.0F;
+        float result = Conversions.EuroToGBP(euro, rateEuro);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -145,12 +142,11 @@ public class ConversionsTest {
     @Test
     public void testGBPToEuro() {
         System.out.println("GBPToEuro");
-        float pound = 0.0F;
-        float expResult = 0.0F;
-        float result = Conversions.GBPToEuro(pound);
+        float pound = 6.0F;
+        double ratePound = 1.0;
+        float expResult = 6.0F;
+        float result = Conversions.GBPToEuro(pound, ratePound);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

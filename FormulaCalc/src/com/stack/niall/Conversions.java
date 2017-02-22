@@ -47,35 +47,23 @@ public class Conversions {
         double answer = ((cTemp*1.8)+32);
         return answer;
     }
-    public static float EuroToDollar(float euro)
+    public static float EuroToDollar(float euro, double rateUsd)
     {
-        ExchangeRate exchange = new ExchangeRate();
-        
-        double rateUsd = exchange.getEuroUsdRate();
         float answer = (float) (euro*rateUsd);
         return answer;
     }
-    public static float DollarToEuro(float dollar)
-    {
-        ExchangeRate exchange = new ExchangeRate();
-        
-        double rateEuro = exchange.getUsdEuroRate();
+    public static float DollarToEuro(float dollar, double rateEuro)
+    {   
         float answer = (float) (dollar*rateEuro);
         return answer;
     }
-    public static float EuroToGBP(float euro)
+    public static float EuroToGBP(float euro, double rateEuro)
     {
-        ExchangeRate exchange = new ExchangeRate();
-        
-        double rateEuro = exchange.getEuroGBPRate();
         float answer = (float) (euro*rateEuro);
         return answer;
     }
-    public static float GBPToEuro(float pound)
+    public static float GBPToEuro(float pound, double ratePound)
     {
-        ExchangeRate exchange = new ExchangeRate();
-        
-        double ratePound = exchange.getGBPEuroRate();
         float answer = (float) (pound*ratePound);
         return answer;
     }
