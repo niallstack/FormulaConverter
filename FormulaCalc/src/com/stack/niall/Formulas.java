@@ -31,7 +31,8 @@ public class Formulas {
     {
         //c represents the speed of light
         double c = 299792458;
-        double answer = mass * (c*c);
+        double cSquared = Math.pow(c, 2);
+        double answer = mass * cSquared;
         return answer;
     }
     public static double Speed(double distance, double time)
@@ -49,7 +50,7 @@ public class Formulas {
         double answer = distance/speed;
         return answer;
     }
-    public static double VolCone(double base, double height, double radius)
+    public static double VolCone(double height, double radius)
     {
         double radiusSquared = Math.pow(radius, 2);
         double answer = (Math.PI * radiusSquared * height) / 3;
