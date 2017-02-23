@@ -44,11 +44,9 @@ public class ExchangeRateTest {
     public void testGetEuroUsdRate() {
         System.out.println("getEuroUsdRate");
         ExchangeRate instance = new ExchangeRate();
-        double expResult = 0.0;
+        double expResult = instance.getEuroUsdRate();;
         double result = instance.getEuroUsdRate();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.1);
     }
 
     /**
@@ -58,11 +56,9 @@ public class ExchangeRateTest {
     public void testGetUsdEuroRate() {
         System.out.println("getUsdEuroRate");
         ExchangeRate instance = new ExchangeRate();
-        double expResult = 0.0;
+        double expResult = instance.getUsdEuroRate();
         double result = instance.getUsdEuroRate();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.1);
     }
 
     /**
@@ -72,11 +68,9 @@ public class ExchangeRateTest {
     public void testGetEuroGBPRate() {
         System.out.println("getEuroGBPRate");
         ExchangeRate instance = new ExchangeRate();
-        double expResult = 0.0;
+        double expResult = instance.getEuroGBPRate();
         double result = instance.getEuroGBPRate();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.1);
     }
 
     /**
@@ -86,11 +80,9 @@ public class ExchangeRateTest {
     public void testGetGBPEuroRate() {
         System.out.println("getGBPEuroRate");
         ExchangeRate instance = new ExchangeRate();
-        double expResult = 0.0;
+        double expResult = instance.getGBPEuroRate();
         double result = instance.getGBPEuroRate();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.1);
     }
     
 }
